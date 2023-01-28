@@ -1,0 +1,31 @@
+.custom-checkbox > input {
+  width: 30px;
+  height: 30px;
+  background-color: #0045ff;
+  appearance: none;
+  cursor: pointer;
+}
+
+.custom-checkbox > input:hover {
+  background-color: #4da3ff;
+}
+
+.custom-checkbox input::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  margin-top: 7px;
+  margin-left: 5px;
+  transform: scale(0) rotate(-45deg);
+  /* background-color: #ffffff; */
+  border: 3px solid #ffffff;
+  border-color: transparent transparent #ffffff #ffffff;
+  opacity: 0;
+  transition: var(--transition-all-3s);
+}
+
+.custom-checkbox input:checked::after {
+  opacity: 1;
+  transform: scale(1) rotate(-45deg);
+}

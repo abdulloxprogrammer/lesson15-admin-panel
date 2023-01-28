@@ -1,0 +1,123 @@
+aside {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 20px;
+  top: 0;
+  height: 100vh;
+  transition: 0.5s;
+  width: var(--aside-width);
+  border-right: 1px solid #e6e5e5;
+}
+
+.nav {
+  list-style-type: none;
+}
+
+.nav-top {
+  display: flex;
+}
+
+.nav-top > h2 {
+  font-style: normal;
+  margin: 23px 0px 0px 5px;
+  font-weight: 400px;
+}
+
+.nav-top > img {
+  width: 40px;
+  height: 40px;
+  margin: 20px 10px 35px 0px;
+  border-radius: 50%;
+}
+
+.nav-item {
+  margin-left: 10px;
+}
+
+.nav-link {
+  display: block;
+  padding: 0px 10px 15px 0px;
+  font-size: 18px;
+  white-space: nowrap;
+  color: grey;
+}
+
+.nav-link:hover {
+  color: #0045ff;
+}
+
+.nav-link > i {
+  font-size: 24px;
+  padding-right: 21px;
+}
+
+.aside-bottom {
+  position: relative;
+  border-top: 1px solid #e6e5e5;
+  padding-top: 20px;
+}
+
+.bottom-ul {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.li-bottom {
+  margin-left: 10px;
+}
+
+.nav-link-2 {
+  display: block;
+  padding: 0px 0px 10px 0px;
+  font-size: 18px;
+  white-space: nowrap;
+  color: grey;
+}
+
+.nav-link-2 > i {
+  font-size: 24px;
+  padding-right: 21px;
+}
+
+.close,
+.close ~ main,
+.close ~ header {
+  --aside-width: 75px;
+}
+
+.switch {
+  position: absolute;
+  left: 170px;
+  bottom: 32px;
+}
+
+.switch > input {
+  width: 40px;
+  height: 22px;
+  padding: 3.5px 5px;
+  background-color: #e6e5e5;
+  border-radius: 15px;
+  appearance: none;
+}
+
+.switch > input::after {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 12.5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.switch > input:checked::after {
+  margin-left: 15px;
+  background-color: #242526;
+}
+
+.switch > input:checked {
+  background-color: #ffffff;
+}

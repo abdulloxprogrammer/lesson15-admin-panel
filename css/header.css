@@ -1,0 +1,67 @@
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: var(--header-width);
+  z-index: 2;
+  padding: 0px 20px 0px 20px;
+  background-color: #ffffff;
+}
+
+.hamburger {
+  background: transparent;
+  border: none;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-left {
+  margin-top: 20px;
+}
+
+.header-center {
+  position: relative;
+  margin-top: 18px;
+}
+
+.header-center > input {
+  width: 600px;
+  height: 45px;
+  padding: 0px 10px 0px 45px;
+  border: 1px solid #e6e5e5;
+  border-radius: 5px;
+  font-size: 16px;
+  color: grey;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+}
+
+.header-center > i {
+  position: absolute;
+  padding-top: 5px;
+  font-size: 25px;
+  color: grey;
+  left: 10px;
+}
+
+.header-right {
+  margin-top: 20px;
+}
+
+.header-right > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+main,
+header {
+  width: calc(100vw - var(--aside-width));
+  left: var(--aside-width);
+  transition: var(--transition-all);
+}

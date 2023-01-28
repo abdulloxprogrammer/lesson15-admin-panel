@@ -1,0 +1,40 @@
+.dark input {
+  background-color: #242526;
+  transition: var(--transition-all);
+}
+
+.dark main::-webkit-scrollbar-thumb {
+  background-color: #707070;
+  transition: var(--transition-all);
+}
+
+.dark main,
+.dark header {
+  background-color: #242526;
+  transition: var(--transition-all);
+}
+
+.dark {
+  background-color: #242526;
+  transition: var(--transition-all);
+}
+
+.dark * {
+  color: white !important;
+}
+
+.dark .dashboard > button {
+  background-color: #3a3b3c;
+}
+
+.dark .card {
+  background-color: #3a3b3c;
+}
+
+.dark .custom-checkbox > input {
+  background-color: #3a3b3c;
+}
+
+.dark .custom-checkbox > input:hover {
+  background-color: #707070;
+}
